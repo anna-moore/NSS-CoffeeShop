@@ -37,7 +37,7 @@ namespace CoffeeShop.Repositories
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Title = reader.GetString(reader.GetOrdinal("Title")),
-                            BeanVarietyId = reader.GetInt32(reader.GetOrdinal("BeanVariety")),
+                            BeanVarietyId = reader.GetInt32(reader.GetOrdinal("BeanVarietyId")),
                         };
 
                         coffees.Add(coffee);
@@ -114,6 +114,7 @@ namespace CoffeeShop.Repositories
 
                     cmd.Parameters.AddWithValue("@id", coffee.Id);
                     cmd.Parameters.AddWithValue("@title", coffee.Title);
+                    cmd.Parameters.AddWithValue("@beanvarietyid", coffee.BeanVarietyId);
 
                     cmd.ExecuteNonQuery();
                 }
