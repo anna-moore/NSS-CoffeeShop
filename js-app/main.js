@@ -5,6 +5,7 @@ const button = document.querySelector("#run-button");
 button.addEventListener("click", () => {
     getAllBeanVarieties()
         .then(beanVarieties => {
+
             console.log(beanVarieties);
         })
     getAllCoffees()

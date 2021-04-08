@@ -7,6 +7,24 @@
 
 <body>
     <button id="run-button">Run It!</button>
+    <button id="form-button">Add Bean Varieties</button>
+    <div class="bean-form isHidden">
+        <h3>Add More Beans</h3>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="region">Region</label>
+            <input type="text" id="region" name="region" />
+        </div>
+        <div class="form-group">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes"></textarea>
+        </div>
+        <button id="submit-form">Submit</button>
+    </div>
+    <div class="output"></div>
     <script src="main.js"></script>
 </body>
 
