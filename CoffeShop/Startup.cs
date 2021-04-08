@@ -29,6 +29,7 @@ namespace CoffeeShop
         {
 
             services.AddTransient<IBeanVarietyRepository, BeanVarietyRepository>();
+            services.AddTransient<ICoffeeRepository, CoffeeRepository>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

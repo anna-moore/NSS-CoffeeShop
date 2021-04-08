@@ -1,4 +1,5 @@
 const url = "https://localhost:5001/api/beanvariety/";
+const url2 = "https://localhost:5001/api/coffee/"
 
 const button = document.querySelector("#run-button");
 button.addEventListener("click", () => {
